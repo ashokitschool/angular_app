@@ -1,0 +1,36 @@
+.navbar-second {
+    background-color: #fff;
+    height: 70px;
+    cursor: pointer;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+  }
+
+  .left .logo i{
+    font-size: xx-large;
+    margin-left: 22px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .left .logo .bi-search{
+    font-size: small;
+    margin-left: 20px;
+    font-weight: 700;
+  }
+  .left .logo input {
+    margin-left: 15px;
+    font-size: large;
+    width: fit-content;
+  }
+  .right .bi-person-circle {
+    font-size: xx-large;
+    margin-right: 20px;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }

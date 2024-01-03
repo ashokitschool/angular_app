@@ -1,5 +1,21 @@
 <div class="container">
-    <a routerLink="createcw" class="btn btn-primary">Create Case Worker</a> &nbsp;
-    <a routerLink="viewcw" class="btn btn-primary">View Case Workers</a> &nbsp;
+    <a href="createcw" class="btn btn-primary">Create Case Worker</a> &nbsp;
+    <a routerLink="dashboard/viewcw" class="btn btn-primary">View Case Workers</a> &nbsp;
     <a routerLink="login" class="btn btn-primary">Logout</a> &nbsp;
+</div>
+<div class="sidebar">
+    <ul id="sidebarlist">
+        <li value="1"  (click)="setActiveClass('1')"><a href="#">Dashboard</a></li>
+        <li value="2" [class.active]="selectedIndex == '2'"><a href="#">Application Registration</a></li>
+        <li value="3" [class.active]="selectedIndex == '3'"><a href="#">Data Collection</a></li>
+        <li value="4" [class.active]="selectedIndex == '4'"><a href="#">Eligibility Determination</a></li>
+        <li value="5" [class.active]="selectedIndex == '5'"><a href="#">Correspondence</a></li>
+        <li value="6" [class.active]="selectedIndex == '6'"><a href="#">Correspondence</a></li>
+        <li value="7" [class.active]="selectedIndex == '7'"><a href="#">Benefit Issuence</a></li>
+        <li value="8" [class.active]="selectedIndex == '8'"><a href="#">Reports</a></li>
+        <li value="9" [class.active]="selectedIndex == '9'"><a href="#">Admin</a></li>
+        <li value="10" [class.active]="selectedIndex == '10'"><a href="#">View Accounts</a></li>
+        <li value="11" [class.active]="selectedIndex == '11'"><a href="#">Create Plan</a></li>
+        <li value="12" [class.active]="selectedIndex == '12'"><a href="#">View Plans</a></li>
+    </ul>
 </div>

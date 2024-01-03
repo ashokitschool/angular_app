@@ -16,7 +16,7 @@ export class LoginComponent {
 
 
   login(){
-     this.router.navigate(['/dashboard'])
+     this.router.navigate(['/dashboard'])//,{queryParams: {logged:true}}
   }
 
 }

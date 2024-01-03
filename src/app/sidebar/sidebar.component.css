@@ -1,0 +1,30 @@
+/** Height of the sidebar **/
+.sidebar{
+    height: calc(100vh - 120px);
+}
+/** styles for sidebar unordered list(ul) tag**/
+.sidebar ul{
+    list-style: none;
+    padding-left: 0;
+}
+/** styles for sidebar  list tag **/
+.sidebar ul li{
+    padding: 18px;
+    text-align: start;
+    
+}
+/** styles for sidebar  list tag on hover **/
+.sidebar ul li:hover{
+    background-color: #E6E6FA;
+}
+.active{
+    background-color: #E6E6FA;
+}
+
+/** styles for sidebar anchor tag inside list tag **/
+.sidebar ul li a{
+    text-decoration: none;
+    color: gray;
+    font-weight:600;
+    font-size:small;
+}
