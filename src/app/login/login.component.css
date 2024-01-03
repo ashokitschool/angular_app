@@ -1,0 +1,59 @@
+.login-form__btn.submit {
+    padding: 15px 40px;
+    background: #7571f9;
+    font-weight: 700;
+}
+.login-form__btn {
+    color: #fff;
+    font-size: 14px;
+}
+.login-input .form-group {
+    margin-bottom: 30px;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1140px;
+}
+.form-input-content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.card .card-body {
+    padding: 1.88rem 1.81rem;
+}
+
+.login-input .form-group .form-control {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    border: 1px solid #f5f5f5;
+    padding: 20px;
+    color: #7A88A1;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.form-control.active, .form-control:focus {
+    box-shadow: none;
+}
+.form-control{
+    font-size: 14px;
+    box-shadow: none;
+}
+.mb-5{
+    margin-bottom: 3rem !important;
+}
+.mt-5 {
+    margin-top: 3rem !important;
+}

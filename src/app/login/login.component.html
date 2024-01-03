@@ -1,22 +1,28 @@
-<div class="container">
-    <h3>Login Here</h3>
 
-    <table>
-        <tr>
-            <td>Email:</td>
-            <td><input type="text" /></td>
-        </tr>
-        <tr>
-            <td>Password:</td>
-            <td><input type="password" /></td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td><input type="button" value="Login" class="btn btn-primary" (click)="login()"/></td>
-        </tr>
-    </table>
-
-    <a href="register">Register Here</a>
-
+<div class="login-form-bg h-100">
+    <div class="container h-100">
+        <div class="row justify-content-center h-100">
+            <div class="col-xl-6">
+                <div class="form-input-content">
+                    <div class="card login-form mb-0">
+                        <div class="card-body pt-5">
+                            <a class="text-center" href="#"> <h4><img src="../../assets/ashokit.png" width="200px"></h4></a>
+                            <form class="mt-5 mb-5 login-input">
+                                <div class="form-group">
+                                   <input type="email" class="form-control" placeholder="Enter Email Id">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Enter Password">
+                                </div>
+                                <a class="btn login-form__btn submit w-100" (click)="login()">Sign In</a>
+                            </form>
+                            <p class="mt-2 login-form__footer"><a routerLink="/register" class="text-primary">Forgot Password?</a></p>
+								
+								 <p class="mt-4 login-form__footer"><a routerLink="/register" class="text-primary">Sign Up</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

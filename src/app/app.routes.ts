@@ -6,15 +6,18 @@ import { ViewCaseworkersComponent } from './view-caseworkers/view-caseworkers.co
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MainBodyComponent } from './main-body/main-body.component';
+import { AppComponent } from './app.component';
 
 export const routes: Routes = [
-
-    {path: 'login', component:LoginComponent},   
-    {path: 'sidebar', component:SidebarComponent},
-    {path: 'register', component:RegisterComponent},
-    {path: 'mbcontent', component:MainBodyComponent},
-    {path: 'dashboard', component:DashboardComponent},
-    {path: 'createcw', component:CreateCaseworkerComponent},
-    {path: 'dashboard/viewcw', component:ViewCaseworkersComponent},
-    {path: '',redirectTo:'/login', pathMatch:'full'}
+    {path:'authenticate', component:LoginComponent},
+    {path:'register', component:RegisterComponent},
+    {path:'', redirectTo:'/authenticate', pathMatch:'full'},
+    {path:'', component:DashboardComponent,
+        children:[
+            {path: 'dashboard', component:MainBodyComponent},
+            {path: 'dashboard/viewcw', component:ViewCaseworkersComponent},
+            {path: 'createcw', component:CreateCaseworkerComponent},
+        ]
+    }
+    
 ];
