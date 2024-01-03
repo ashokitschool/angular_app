@@ -28,3 +28,79 @@
     font-weight:600;
     font-size:small;
 }
+
+/** **/
+
+.nk-sidebar {
+    width: 25.1875rem;
+    padding-bottom: 112px;
+    height: 100%;
+    position: absolute;
+    padding-top: 0;
+    z-index: 99;
+    background: #fff;
+    transition: all .2s ease;
+}
+.nk-sidebar .metismenu > li {
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    color: #464a53;
+}
+
+.nk-sidebar .metismenu {
+    background-color: #fff;
+}
+.nk-sidebar ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background: #fafafa;
+}
+.nk-sidebar .metismenu > li a > i {
+    font-size: 0.95rem;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 0.4375rem 0 0;
+    color: #464a53;
+}
+.nk-sidebar .metismenu a {
+    position: relative;
+    display: block;
+    padding: 1.8125rem 1.25rem;
+    outline-width: 0;
+    transition: all .3s ease-out;
+    color: #464a53;
+}
+.nk-sidebar .metismenu > li.active > a {
+    background: #F3F1FA;
+    color: #464a53;
+}
+.metismenu .collapse.in {
+    display: block;
+}
+.metismenu .collapse {
+    display: none;
+}
+.collapse:not(.show) {
+    display: none;
+}
+.nk-sidebar .metismenu a:hover, .nk-sidebar .metismenu a:active, .nk-sidebar .metismenu a.active {
+    text-decoration: none;
+    background-color: #F3F1FA;
+}
+
+.nk-sidebar .metismenu > li:hover > a {
+    background: #F3F1FA;
+    color: #7571f9;
+}
+.nk-sidebar .metismenu a:hover, .nk-sidebar .metismenu a:active, .nk-sidebar .metismenu a.active {
+    text-decoration: none;
+}
+.metismenu .active > .has-arrow:after, .metismenu .has-arrow[aria-expanded=true]:after {
+    transform: rotate(225deg) translateY(-50%);
+}
