@@ -28,25 +28,25 @@
     <div class="nk-nav-scroll">
         <ul class="metismenu" id="menu">
             <li>
-                <a href="index.html">
-                    <i class="icon-speedometer menu-icon"></i><span class="nav-text">Dashboard</span>
+                <a routerLink="/dashboard">
+                    <i class="bi bi-speedometer menu-icon"></i><span class="nav-text">Dashboard</span>
                 </a>
             </li>
            
             <li>
-                <a class="has-arrow" href="javascript:void()" aria-expanded="false">
-                    <i class="icon-screen-tablet menu-icon"></i><span class="nav-text">Application Registration</span>
+                <a class="has-arrow" data-bs-toggle="collapse" href="#application" aria-expanded="false">
+                    <i class="bi bi-tablet menu-icon"></i><span class="nav-text">Application Registration</span>
                 </a>
-                <ul aria-expanded="false">
-                    <li><a href="create_app.html">Create Application</a></li>
-                    <li><a href="view_app.html">View Applications</a></li>
+                <ul aria-expanded="false" id="application" class="collapse" data-bs-parent="#menu">
+                    <li><a routerLink="/createcw">Create Application</a></li>
+                    <li><a routerLink="/dashboard/viewcw">View Applications</a></li>
                 </ul>
             </li>
             <li>
-                <a class="has-arrow" href="javascript:void()" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" >
-                    <i class="icon-graph menu-icon"></i> <span class="nav-text">Data Collection</span>
+                <a class="has-arrow" data-bs-toggle="collapse" href="#dataCollection" aria-expanded="false" aria-controls="dataCollection" >
+                    <i class="bi bi-graph-up menu-icon"></i> <span class="nav-text">Data Collection</span>
                 </a>
-                <ul  class="collapse in" aria-expanded="true" >
+                <ul  class="collapse" aria-expanded="true" data-bs-parent="#menu" id="dataCollection" >
             
                     <li><a href="plan_selection.html">Plan Selection</a></li>
                     <li><a href="income_detail.html">Income Details</a></li>
@@ -56,18 +56,18 @@
                 </ul>
             </li>
             <li>
-                <a class="has-arrow" href="javascript:void()" aria-expanded="false">
-                    <i class="icon-grid menu-icon"></i><span class="nav-text">Eligibility Determination</span>
+                <a class="has-arrow" data-bs-toggle="collapse" href="#eligibility" aria-expanded="false" aria-controls="eligibility">
+                    <i class="bi bi-grid menu-icon"></i><span class="nav-text">Eligibility Determination</span>
                 </a>
-                <ul aria-expanded="false">
+                <ul aria-bs-expanded="false" data-bs-parent="#menu" class="collapse" id="eligibility">
                     <li><a href="eligibility_determination.html">Determine Eligibility</a></li>
                 </ul>
             </li>
             <li>
-                <a class="has-arrow" href="javascript:void()" aria-expanded="false">
-                    <i class="icon-menu menu-icon"></i><span class="nav-text">Correspondence</span>
+                <a class="has-arrow" data-bs-toggle="collapse" href="#correspondence" aria-expanded="false" aria-controls="correspondence">
+                    <i class="bi bi-list menu-icon"></i><span class="nav-text">Correspondence</span>
                 </a>
-                <ul aria-expanded="false">
+                <ul aria-expanded="false" data-bs-parent="#menu" id="correspondence" class="collapse">
                     <li><a href="corrspondence.html" aria-expanded="false">Correspondence</a></li>
                     <li><a href="pending_notices.html" aria-expanded="false">Pending Notices</a></li>
                     <li><a href="history_notice.html" aria-expanded="false">History Notices</a></li>
@@ -75,7 +75,7 @@
             </li>
             <li>
                 <a href="benefit_iss.html" aria-expanded="false">
-                    <i class="icon-badge menu-icon"></i><span class="nav-text">Benefit Issuance</span>
+                    <i class="bi bi-person-badge-fill menu-icon"></i><span class="nav-text">Benefit Issuance</span>
                 </a>
             </li>
            <!--  <li>
@@ -88,15 +88,15 @@
                 </ul>
             </li> -->
             <li>
-                <a href="reports.html">
-                    <i class="icon-note menu-icon"></i><span class="nav-text">Reports</span>
+                <a href="#reports">
+                    <i class="bi bi-journal-text menu-icon"></i><span class="nav-text">Reports</span>
                 </a>
             </li>
             <li>
-                <a class="has-arrow" href="javascript:void()" aria-expanded="false">
-                    <i class="icon-note menu-icon"></i><span class="nav-text">Admin</span>
+                <a class="has-arrow"  data-bs-toggle="collapse" href="#admin" aria-expanded="false" aria-controls="admin">
+                    <i class="bi bi-journal-text menu-icon"></i><span class="nav-text">Admin</span>
                 </a>
-                <ul aria-expanded="false">
+                <ul id="admin" aria-expanded="false" class="collapse" data-bs-parent="#menu">
                     <li><a href="create_acc.html">Create Account</a></li>
                     <li><a href="view_acc.html">View Accounts</a></li>
                     <li><a href="create_plan.html">Create Plan</a></li>
